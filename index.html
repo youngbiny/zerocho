@@ -2,25 +2,33 @@
     <head>
         <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
         <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+        <script scr="https://unpkg.com/babel-standalone@6/bable.min.js"></script>
     </head>
     <body>
-        <div class="root"></div>
-        <script scr="Like-button.js">
-            const e = React.creatElement;
-
+        <div id="root"></div>
+        <script type="text/babel">
             class LikeButton extends React.Component{
                 constructor(props){
                     super(props);
+                    this.state = {
+                        like: false,
+                    };
 
                 }
 
                 render(){
-                    return e('button', {onClick: () => {console.log('clicked')}, type:'submit'} , 'Like');
+                    return <button type="submit" onClick={() => {this.setState({Liked:true})}}>
+                        {this.state.liked === true ? 'Liked' : 'Like'}
+                        </button>;
+                    //return e('button', 
+                    //{onClick: () => {this.setState({Liked:true})}, type:'submit'} ,
+                     //this.state.liked === true ? 'Liked' : 'Like',
+                     //);
                 }
             }
         </script>
-        <script>
-            ReactDOM.render(e(LikeButton), document.querySelector('#root'));
+        <script tyep="text/bable">
+            ReactDOM.render( <div><LikeButton /></div>, document.querySelector('#root'));
         </script>
     </body>
 </html>
