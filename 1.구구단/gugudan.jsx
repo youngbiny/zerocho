@@ -1,5 +1,5 @@
 const React = require('react');
-const { useState, useRef} = React;
+const { useState, useRef } = React;
 
 const GuGuDan = () => {
     const [first, setFirst] = useState(Math.ceil(Math.random() * 9));

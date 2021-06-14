@@ -3,13 +3,16 @@ const path = require('path');
 module.exports = {
     mode: 'development',
     devtool : 'eval',
+    resolve :{
+        extenstions : ['.jsx', '.js'],
+    },
     entry : {
         app: './client',
     },
     module : {
         rules :[{
             test : /\.jsx?$/,
-            loader : 'bable-loder',
+            loader : 'babel-loader',
             options : {
                 presets : ['@babel/preset-env', '@babel/preset-react'],
                 plugins : [],
