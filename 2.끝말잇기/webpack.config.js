@@ -1,11 +1,12 @@
-const path = require('path');
+const path = require('path'); 
+const { webpack } = require('webpack');
 
 module.exports = {
     name : 'wordrelay-setting',
     mode : 'development',
     devtool : 'eval',
     resolve : {
-        extensions: ['.js', '.jsx']
+        extensions: ['.js', '.jsx'],
     },
     entry : {
         app : ['./client'],
@@ -22,7 +23,7 @@ module.exports = {
     },
     output : {
         path : path.join(__dirname, 'dist'),
-        filename : 'app.js'
+        filename : 'app.js',
     }, //출력
 
 }

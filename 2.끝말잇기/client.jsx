@@ -1,7 +1,7 @@
-const React = require('readt');
+const React = require('react');
 const ReactDom = require('react-dom');
 
-const wordrelay = require('wordrelay');
+const wordrelay = require('./wordrelay');
 
 
-ReactDOM.render(<wordrelay />, document.querySelector("#root"));
+ReactDom.render(<wordrelay />, document.querySelector("#root"));
