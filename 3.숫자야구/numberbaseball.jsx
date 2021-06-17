@@ -9,11 +9,11 @@ class Numberbaseball extends Component {
         tries : [],
     };
 
-    onSubmitForm() => {
+    onSubmitForm = () => {
 
     };
 
-    onChnageInput() => {
+    onChnageInput = () => {
 
     };
 
@@ -34,7 +34,7 @@ class Numberbaseball extends Component {
                 </ul>
             </>
         );
-    }
+    };
 }
 
 export default Numberbaseball;
