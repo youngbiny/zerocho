@@ -8,10 +8,6 @@ const GuGuDan = () => {
     const [result, setResult] = useState('');
     const inputRef = useRef(null);
 
-    const onChangeInput = (e) => {
-        setValue(e.target.value);
-    };
-
     const onSubmitForm = (e) => {
         e.preventDefault();
         if(parseInt(this.state.value) === this.state.first * this.state.second){
@@ -31,6 +27,8 @@ const GuGuDan = () => {
         setValue(e.target.value);
     }
 
+    console.log('렌더링');
+    
     return (
         <>
         <div>{first}곱하기{second}는?</div>
