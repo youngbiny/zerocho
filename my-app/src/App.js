@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Gugudan from './gugudan';
 import ShowName from './showName';
 import Text from './showTest';
 
@@ -6,7 +7,7 @@ const App = () =>{
   return (
     <>
       <div className = 'App'>
-          <ShowName />
+          <Gugudan />
           <Text />
       </div>
     </>
