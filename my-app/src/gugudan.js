@@ -23,8 +23,8 @@ const Gugudan = () => {
             setValue("");
             inputRef.current.focus();
         }
-    }
-
+    }    
+    console.log('렌더링');
     return(
         <>
             <p>{first} 곱하기 {second} 는?</p>

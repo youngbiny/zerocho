@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
-import Gugudan from './gugudan';
-import ShowName from './showName';
+import WordRelay from './wordadd';
 import Text from './showTest';
 
 const App = () =>{
   return (
     <>
       <div className = 'App'>
-          <Gugudan />
-          <Text />
+          <WordRelay />
       </div>
     </>
   );
