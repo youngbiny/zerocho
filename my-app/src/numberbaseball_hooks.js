@@ -1,6 +1,5 @@
 import Try from "./Try";
-const React = require('react');
-const { Component } = require('react');
+import React, { useState } from 'react';
 function getNumbers(){ //숫자4개를 랜덤하게 뽑는 함수
     const candidate = [1,2,3,4,5,6,7,8,9];
     const array = [];
@@ -10,6 +9,45 @@ function getNumbers(){ //숫자4개를 랜덤하게 뽑는 함수
     }
     return array;
 }
+
+const NumberBaseball = () => {
+    const [result, setResult] = useState('');
+    const [value,setValue] = useState(getNumbers);
+    const [answer,setAnswer] = useState('');
+    const [tries,setTries] = useState('');
+
+    const onSubmitForm = (e) => {
+        e.preventDefault();
+        if(value === answer.join('')){
+            setResult("홈런");
+            setTries((prevTries) => {
+                return [...prevTries, {try : value, result : '홈런'}]
+            });
+            alert('게임을 다시 시작합니다.');
+            
+        }
+    }
+
+    const onChangeInput = (e) => {
+        setValue(e.target.value);
+    }
+    return(
+        <>
+            <h1>{result}</h1>
+            <form submit={onSubmitForm}>
+                <input maxLength={4} onChange={onChangeInput} value={setValue}/>
+                <button>입력</button>
+            </form>
+            <div>시도 : {tries.length}</div>
+            <ul>
+                {[].map()}
+                <Try />
+            </ul>
+        </>
+    );
+}
+
+
 
 class Numberbaseball extends Component {
     state = {

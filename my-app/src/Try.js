@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Try extends Component {
-    render(){
-        return(
-            <>
-                <li><b>{this.props.v.fruit}</b>{this.props.i}</li>
-            </>
-        );
-    }
+const Try = ({ tryinfo }) => {
+    return (
+        <li>
+            <div>{tryinfo.try}</div>
+            <div>{tryinfo.result}</div>
+        </li>        
+    )
 }
+
 
 export default Try;
