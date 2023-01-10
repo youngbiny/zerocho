@@ -40,7 +40,11 @@ const NumberBaseball = () => {
             </form>
             <div>시도 : {tries.length}</div>
             <ul>
-                {[].map()}
+                {[].map(() => {
+                    return(
+                        <li></li>
+                    );
+                })}
                 <Try />
             </ul>
         </>

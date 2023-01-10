@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import NumberBasaball from './numberbaseball';
+import React from 'react';
+import RSP from './RSP';
 
 const App = () =>{
   return (
     <>
       <div className = 'App'>
-          <NumberBasaball />
+          <RSP />
       </div>
     </>
   );
