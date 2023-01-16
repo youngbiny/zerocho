@@ -1,11 +1,11 @@
 import React from 'react';
-import RSP from './RSP';
+import Lotto from './Lotto';
 
 const App = () =>{
   return (
     <>
       <div className = 'App'>
-          <RSP />
+          <Lotto />
       </div>
     </>
   );
