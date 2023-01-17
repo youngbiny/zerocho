@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Ball from '/ball';
+import Ball from './ball';
 
 function getWinNumber(){
     console.log();

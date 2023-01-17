@@ -1,11 +1,11 @@
 import React from 'react';
-import Lotto from './Lotto';
+import TicTacTok from './tiktaktok';
 
 const App = () =>{
   return (
     <>
       <div className = 'App'>
-          <Lotto />
+          <TicTacTok />
       </div>
     </>
   );
