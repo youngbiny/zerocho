@@ -1,5 +1,5 @@
 import React, { useState,useRef, useEffect, useMemo } from "react";
-import Ball from '/ball';
+import Ball from './ball';
 
 function getWinNumber(){
     console.log();

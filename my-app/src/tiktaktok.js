@@ -1,4 +1,4 @@
-import React, { useState,useReducer } from 'react';
+import React, { useState,useReducer,useCallback } from 'react';
 import Table from './table';
 
 const initalState = {
@@ -9,9 +9,9 @@ const initalState = {
 
 const SET_WINNER = 'SET_WINNER';
 
-const reducer = () => {
+const reducer = (state, action) => {
     switch(action.type){
-        case 'SET_WINNER':
+        case SET_WINNER :
             return{
                 ...state,
                 winner : action.winner,

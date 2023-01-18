@@ -1,10 +1,11 @@
 import React from 'react';
 
-const Td = () => {
+const Td = (rowIndex, cellIndex) => {
+    const onClicktd = () => {
+        
+    }
     return(
-    <tr>
-        <td>{''}</td>
-    </tr>
+        <td onClick={onClicktd}>{''}</td>
     );
 }
 
